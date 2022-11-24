@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./images/bon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="home.html">
+            <div class="logobon"><img src="./images/369cf621-33e0-4982-b608-0b0025511129.jpg" alt=""></div>
+        </a>
+        <div class="hamburger">
+            <div class="line l1"></div>
+            <div class="line l2"></div>
+            <div class="line l3"></div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Hours&Location</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="reserv.html" class="active">Reservations</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservation">
+        <div class="reserve">
+            <form name="myform" onsubmit="return validate()">
+                <h1>Contact us to reserve your table</h1>
+                <input type="text" name="form_name" placeholder="Your Full Name" required>
+                <input type="text" name="num" placeholder="Your Phone Number" required> <span id="phone"></span>
+                <textarea id="message" rows="10" placeholder="Any comments?"></textarea>
+                <button type="submit" value="Submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="content-footer">
+            <div class="straight">
+                <a href="home.html" class="a-img"><div class="footer-img">
+                    <img src="./images/bon.png" alt="">
+                </div></a>
+                <div class="footer-main">
+                    <h4>Restauraunt</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="hours.html">Hours&Location</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="reserv.html">Reservevations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-main">
+                    <h4>Our Social Media</h4>
+                    <div class="social-media-links">
+                        <a href="https://facebook.com"><img src="./icons/facebook.png" alt="" class="facebook"></a>
+                        <a href="https://instagram.com/boncafe.uz"><img src="./icons/instagram.png" alt="" class="instagram"></a>
+                        <a href="https://youtube.com"><img src="./icons/youtube.png" alt="" class="youtube"></a>
+                    </div>
+                </div>
+                <div class="footer-wt">
+                    <h6>This website was created to fulfill Web Technology
+                        module's requirements and does not represent an actual company or service</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
